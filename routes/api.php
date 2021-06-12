@@ -20,3 +20,8 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 
 Route::get('/test', 'test\TestController@KawaiiSanbox');
+Route::get('/insta/auth', 'test\TestController@instaOauth');
+Route::get('/insta/dauth', 'test\TestController@instaDauth');
+Route::get('/insta/remdata', 'test\TestController@removeInstaData');
+
+Route::get('/insta/scrapper', 'test\TestController@instaScrapper');
