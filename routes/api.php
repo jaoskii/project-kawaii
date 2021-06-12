@@ -20,3 +20,4 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 
 
 Route::get('/test', 'test\TestController@KawaiiSanbox');
+Route::get('/insta/v1/scrapper', 'test\TestController@instagramScrapperv1');
