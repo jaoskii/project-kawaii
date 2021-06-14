@@ -19,5 +19,9 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 
-Route::get('/test', 'test\TestController@KawaiiSanbox');
+Route::get('/test', 'test\TestController@youtubeSandbox');
 Route::get('/insta/v1/scrapper', 'test\TestController@instagramScrapperv1');
+
+Route::get('/kawaii', 'test\TestController@initialPage');
+Route::get('/kawaii/{pk}', 'test\TestController@pkDetails');
+
